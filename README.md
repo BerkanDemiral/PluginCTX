@@ -10,7 +10,7 @@ Works in the terminal CLI and the VS Code extension. Install once, use in every 
 ## Install
 
 ```
-/plugin marketplace add <your-github-user>/ctx-relay
+/plugin marketplace add BerkanDemiral/PluginCTX
 /plugin install ctx-relay@ctx-relay-marketplace
 ```
 
