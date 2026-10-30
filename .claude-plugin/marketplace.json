@@ -1,0 +1,12 @@
+{
+  "name": "ctx-relay-marketplace",
+  "owner": { "name": "ctx-relay contributors" },
+  "description": "ctx-relay: automatic context handoff and prompt refinement for Claude Code.",
+  "plugins": [
+    {
+      "name": "ctx-relay",
+      "source": "./",
+      "description": "Context handoff at ~50% usage + prompt refinement for Claude Code."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ctx-relay",
+  "displayName": "ctx-relay",
+  "version": "0.1.0",
+  "description": "Hands a long Claude Code chat over to a fresh one at ~50% context: writes a compact snapshot at a buildable point and auto-loads it in the next chat. Also ships /ctx-relay:refine for meaning-preserving prompt cleanup.",
+  "author": { "name": "ctx-relay contributors" },
+  "license": "MIT",
+  "keywords": ["context", "handoff", "snapshot", "tokens", "prompt-caching"]
+}

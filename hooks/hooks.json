@@ -1,0 +1,30 @@
+{
+  "description": "ctx-relay: context guard (Stop) and snapshot restore (SessionStart). No per-prompt hooks, so normal turns add zero tokens.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/context-guard.mjs"],
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "startup|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/session-restore.mjs"],
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
